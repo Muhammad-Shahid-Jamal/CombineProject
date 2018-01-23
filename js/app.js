@@ -1,4 +1,9 @@
 jQuery(document).ready(function($){
+
+    $("button.navbar-toggle").on("click",function(){
+        $("#crypto-navbar").slideToggle("slow");
+    });
+
     setInterval(slider,6000);
 });
 
