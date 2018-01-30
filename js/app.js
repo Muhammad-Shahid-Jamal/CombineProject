@@ -3,7 +3,26 @@ jQuery(document).ready(function($){
     $("button.navbar-toggle").on("click",function(){
         $("#crypto-navbar").slideToggle("slow");
     });
-
+    $(".user-login-success").on("click",function(){
+        $(".user-options-hover").slideToggle("slow");
+    });
+    $(".account #main-page .side-bar a").on("click",function(e){
+        e.preventDefault();
+        var targetElem = $(this)[0].dataset.targetId;
+        if(targetElem.length > 0){
+            $(".account #main-page .side-bar a").removeClass("active");
+            $(this).addClass("active");
+            $(".side-open").removeClass("show");
+            $("#"+targetElem).addClass("show");
+        }
+    });
+    $(".faq #faq-section .question-box .toggle-ans").on("click",function(){
+        var targetId = $(this)[0].dataset.targetAns;
+        if(targetId.length > 0){
+            $(this).find("i").toggleClass("downMove");
+            $("#"+targetId).slideToggle();
+        }
+    });
     setInterval(slider,6000);
 });
 

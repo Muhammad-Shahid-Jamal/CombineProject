@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Account</title>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600" rel="stylesheet">
+    <!-- bootstrap cdn -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- fontowsem -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body class="account">
+    <section id="main-section">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="crypto-navbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand">
+                        <img src="images/logo.png"/> <strong>Crypto Retail</strong>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="crypto-navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Convert</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li class="selected"><a href="#">faqs</a></li>
+                        <li><a href="#">Contact Us</a></li> -->
+                        <li class="user-login-success">
+                            <a href="#">
+                                <span class="user-profile-pic">
+                                    <img src="images/user.png">
+                                </span>
+                                <span>John DOE</span>
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <div class="user-options-hover">
+                                <ul>
+                                    <li><a href="#">My Wallet</a></li>
+                                    <li><a href="#">Trading Exchange</a></li>
+                                    <li><a href="#">Settings</a></li>
+                                    <li><a href="#">Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="box-cover"></div>
+    </section>
+    <section id="main-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 side-bar">
+                    <a href="#" class="active" data-target-id="my-wallet">
+                        <img src="images/walet.png">
+                        <span>MY WALLET</span>
+                    </a>
+                    <a href="#" data-target-id="">
+                        <img src="images/bitcoin2.png">
+                        <span>BUY BITCOIN</span>
+                    </a>
+                    <a href="#" data-target-id="">
+                        <img src="images/dollar.png">
+                        <span>SELL BITCOIN</span>
+                    </a>
+                    <a href="#" data-target-id="send">
+                        <img src="images/sendarr.png">
+                        <span>SEND</span>
+                    </a>
+                    <a href="#" data-target-id="account-recieve">
+                        <img src="images/recievearr.png">
+                        <span>RECEIVE</span>
+                    </a>
+                    <a href="#" data-target-id="my-friends">
+                        <img src="images/friends.png">
+                        <span>MY FRIENDS</span>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 sid-bar-b">
+                    <div id="my-wallet" class="side-open show">
+                        <div class="row row-eq-height">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 side-a">
+                                <h3>
+                                    Welcome to your<br>new wallet!
+                                </h3>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right side-b">
+                                <h4>Current Balance</h4>
+                                <h3>1107.264564 BTC</h3>
+                                <h4>$16,784</h4>
+                            </div>
+                        </div>
+                        <div class="row row-eq-height bar-code">
+                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                <img src="images/barcode.png" class="img-responsive">
+                            </div>
+                            <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+                                <div class="box-coded">
+                                    <p>Bitcoin Address</p>
+                                    <h3>1s25asd2aAkh947iAIJTY6yte7</h3>
+                                    <p>Share this with anyone to receive payments</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row bit-table">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>Total Transactions</td>
+                                                <td>1564</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Total Received</td>
+                                                <td>3546.323653656 BTC</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Total Sent</td>
+                                                <td>2656.231653755 BTC</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Balance</td>
+                                                <td>1107.2645642121 BTC</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="send" class="side-open">
+                        <div class="row">
+                            <div class="col-sm-8 col-md-8 col-lg-8 side-a">
+                                <h3>Send Bitcoin</h3>
+                                <p>
+                                    Please double check the amount and Bitcoin address before pushing the “Confirm“ button. Bitcoin transactions are final and cannot be reversed. 
+                                </p>
+                            </div>
+                            <div class="col-sm-4 col-md-4 col-lg-4 text-right side-b">
+                                <h4>Current Balance</h4>
+                                <h3>1107.264564 BTC</h3>
+                                <h4>$16,784</h4>
+                            </div>
+                            <div class="form-group form-start">
+                                <input type="text" class="form-control custome-inp" placeholder="Send to Bitcoin Address">
+                            </div>
+                            <input type="text" class="custome-inp-1" placeholder="Amount in">
+                            <select class="custome-inp-1">
+                                <option>BTC</option>
+                            </select>
+                            <div class="form-group">
+                                <input type="text" class="form-control custome-inp extras" placeholder="Note">
+                            </div>
+                            <div class="form-btn">
+                                <button class="crpto-btn">Confirm</button>
+                                <button class="crpto-btn">Get Fee</button>                                
+                            </div>
+                            <p class="details-text">
+                                Dynamic fees based on transaction volume on the blockchain are calculated by BitOasis and added to 
+                                your transactions. Fees can range from 0.0004-0.005 BTC in most cases. You can customize fees here, 
+                                but confirmation time might be unpredictable.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="account-recieve" class="side-open">
+                        <h2>Your Bitcoin receiving address</h2>
+                        <input type="text" class="custom-input" placeholder="394d6R3hELCbkJnLNYv2zVAT4xBjriEAZV">
+                        <button class="crpto-btn">Confirm</button>
+                        <img src="images/barcode-2.png" class="img-responsive">
+                        <p>
+                            Share this address with others and they can send you Bitcoin.<br>
+                            You can also request payment via email.
+                        </p>
+                    </div>
+                    <div id="my-friends" class="side-open">
+                        <h2>My Friends</h2>
+                        <p>
+                            Connect your Crypto Retail wallet to your Facebook account and start sending bitcoins to your friends through Facebook today.
+                        </p>
+                        <button class="crpto-btn">Connect</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="circle-bg"></div>
+        <div class="footer-body">
+            <div class="main-box">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4 col-lg-4 side-a">
+                            <a href="#" class="footer-brand">
+                                <img src="images/logo.png"/> <strong>Crypto Retail</strong>
+                            </a>
+                            <p>
+                                Established in 2017 as the cloud mining provider, Crypto Retail has become a multi-functional cryptocurrency exchange, trusted by over a million users.
+                            </p>
+                            <h4>Follow us</h4>
+                            <p>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </p>
+                        </div>
+                        <div class="col-sm-2 col-md-2 col-lg-2 side-b">
+                            <h4>RESOURCES</h4>
+                            <p>
+                                <a href="#">Bitcoin Price</a>
+                                <br>
+                                <a href="#">Ethereum Price</a>
+                                <br>
+                                <a href="#">Blog</a>
+                                <br>
+                                <a href="#">Faqs</a>                                                                
+                            </p>
+                        </div>
+                        <div class="col-sm-2 col-md-2 col-lg-2 side-b">
+                            <h4>Short Link</h4>
+                            <p>
+                                <a href="#">Buy Bitcoins</a>
+                                <br>
+                                <a href="#">Buy Ethereum</a>
+                                <br>
+                                <a href="#">Sell Bitcoins</a>
+                                <br>
+                                <a href="#">Payment Options</a>
+                                <br>
+                                <a href="#">Convertor</a>                                                                
+                            </p>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4 side-c">
+                            <h4>Subscribe</h4>
+                            <p>Sign up for our mailing list to get latest updates and offers</p>
+                            <form>
+                                <div>
+                                    <input type="text" name="text">
+                                    <button type="submit"><i class="fa fa-paper-plane"></i></button>
+                                </div>
+                            </form>
+                            <p>
+                                Working Hours :  Monday-Saturday<br>
+                                <span>Close : Sunday</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-footer">
+            <p>Copyright © 2018  <span>Crypto Retail</span>. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
